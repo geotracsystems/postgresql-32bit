@@ -1,5 +1,5 @@
-FROM sameersbn/ubuntu:14.04.20160321
-MAINTAINER sameer@damagehead.com
+FROM m0elnx/ubuntu-32bit:latest
+MAINTAINER M0E-lnx@gmail.com
 
 ENV PG_APP_HOME="/etc/docker-postgresql"\
     PG_VERSION=9.4 \
@@ -11,7 +11,9 @@ ENV PG_APP_HOME="/etc/docker-postgresql"\
 
 ENV PG_BINDIR=/usr/lib/postgresql/${PG_VERSION}/bin \
     PG_DATADIR=${PG_HOME}/${PG_VERSION}/main
+ENV DEBIAN_FRONTEND=noninteractive
 
+RUN apt-get update -q && apt-get install -q -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" wget
 RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - \
  && echo 'deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
  && apt-get update \
