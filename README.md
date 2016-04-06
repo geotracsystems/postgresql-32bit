@@ -1,4 +1,4 @@
-# m0elnx/postgresql
+# m0elnx/postgresql-32bit
 This is a fork of sameersbn/postgresql (as of 9.4-18) that has been modified to run on a 32-bit
 environment.  The documentation provided by sameersbn/postgresql still applies.
 
