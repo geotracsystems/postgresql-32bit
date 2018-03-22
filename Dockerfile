@@ -2,7 +2,7 @@ FROM m0elnx/ubuntu-32bit:latest
 MAINTAINER M0E-lnx@gmail.com
 
 ENV PG_APP_HOME="/etc/docker-postgresql"\
-    PG_VERSION=9.4 \
+    PG_VERSION=9.2 \
     PG_USER=postgres \
     PG_HOME=/var/lib/postgresql \
     PG_RUNDIR=/run/postgresql \

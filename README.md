@@ -1,6 +1,7 @@
-# m0elnx/postgresql-32bit
-This is a fork of sameersbn/postgresql (as of 9.4-18) that has been modified to run on a 32-bit
-environment.  The documentation provided by sameersbn/postgresql still applies.
+# geotracsystems/postgresql-32bit
+This is a fork of m0elnx/postgresql-32bit, fork of sameersbn/postgresql (as of 9.4-18) that has
+been modified to run on a 32-bit environment, and rolled back to postgres 9.2. The documentation
+provided by sameersbn/postgresql still applies.
 
 - [Introduction](#introduction)
   - [Contributing](#contributing)
